@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% block body %}
+
+<form method="POST">
+    {% csrf_token %}
+
+    Are you want to delete this Movie??<br>{{movie1.name}}<br>
+
+    <input type="submit">
+</form>
+
+
+{% endblock %}
